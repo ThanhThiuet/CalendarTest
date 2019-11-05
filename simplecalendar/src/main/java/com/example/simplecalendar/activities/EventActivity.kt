@@ -879,6 +879,7 @@ class EventActivity : SimpleActivity() {
         }
     }
 
+    // todo: here -> can save on server with api
     private fun saveEvent() {
         val newTitle = event_title.value
         if (newTitle.isEmpty()) {
