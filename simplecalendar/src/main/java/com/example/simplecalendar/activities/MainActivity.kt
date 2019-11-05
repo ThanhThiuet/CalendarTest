@@ -206,7 +206,7 @@ class MainActivity : SimpleActivity(), RefreshRecyclerViewListener {
             R.id.import_events -> tryImportEvents()
             R.id.export_events -> tryExportEvents()
             R.id.settings -> launchSettings()
-            R.id.about -> launchAbout()
+//            R.id.about -> launchAbout()
             android.R.id.home -> onBackPressed()
             else -> return super.onOptionsItemSelected(item)
         }
