@@ -130,7 +130,8 @@ class SettingsActivity : SimpleActivity() {
 
     private fun setupCustomizeColors() {
         settings_customize_colors_holder.setOnClickListener {
-            startCustomizationActivity()
+            // todo: custom if having enough time
+//            startCustomizationActivity() => error
         }
     }
 

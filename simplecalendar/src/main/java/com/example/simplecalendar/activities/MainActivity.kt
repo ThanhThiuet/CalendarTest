@@ -108,9 +108,9 @@ class MainActivity : SimpleActivity(), RefreshRecyclerViewListener {
 
         checkAppOnSDCard()
 
-        if (savedInstanceState == null) {
-            checkCalDAVUpdateListener()
-        }
+//        if (savedInstanceState == null) {
+//            checkCalDAVUpdateListener()
+//        }
 
         if (!config.wasUpgradedFromFreeShown && isPackageInstalled("com.simplemobiletools.calendar")) {
             ConfirmationDialog(this, "", R.string.upgraded_from_free, R.string.ok, 0) {}
