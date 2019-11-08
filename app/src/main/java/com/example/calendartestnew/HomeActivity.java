@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
-import com.example.simplecalendar.activities.MainActivity;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class HomeActivity extends AppCompatActivity
@@ -18,6 +16,12 @@ public class HomeActivity extends AppCompatActivity
         setContentView(R.layout.home_main);
         button = findViewById(R.id.button);
 
-        button.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, MainActivity.class)));
+        button.setOnClickListener(v -> {
+            try {
+                startActivity(new Intent(HomeActivity.this, Class.forName("com.example.simplecalendar.activities.MainActivity")));
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        });
     }
 }
