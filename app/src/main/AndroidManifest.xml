@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="com.example.simplecalendar.test.TestCalendarActivity"></activity>
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,15 +17,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.simplecalendar.activities.MainActivity"/>
-        <activity android:name="com.example.simplecalendar.activities.SplashActivity"/>
-        <activity android:name="com.example.simplecalendar.activities.EventActivity"/>
-        <activity android:name="com.example.simplecalendar.activities.ManageEventTypesActivity"/>
-        <activity android:name="com.example.simplecalendar.activities.SettingsActivity"/>
-        <activity android:name="com.example.simplecalendar.activities.SnoozeReminderActivity"/>
-        <activity android:name="com.example.simplecalendar.activities.WidgetListConfigureActivity"/>
-        <activity android:name="com.example.simplecalendar.activities.WidgetMonthlyConfigureActivity"/>
-        <activity android:name="com.example.simplecalendar.activities.SimpleActivity"/>
+        <activity android:name="com.example.simplecalendar.activities.MainActivity"></activity>
+        <activity android:name="com.example.simplecalendar.activities.SplashActivity" />
+        <activity android:name="com.example.simplecalendar.activities.EventActivity" />
+        <activity android:name="com.example.simplecalendar.activities.ManageEventTypesActivity" />
+        <activity android:name="com.example.simplecalendar.activities.SettingsActivity" />
+        <activity android:name="com.example.simplecalendar.activities.SnoozeReminderActivity" />
+        <activity android:name="com.example.simplecalendar.activities.WidgetListConfigureActivity" />
+        <activity android:name="com.example.simplecalendar.activities.WidgetMonthlyConfigureActivity" />
+        <activity android:name="com.example.simplecalendar.activities.SimpleActivity" />
     </application>
 
 </manifest>

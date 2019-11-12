@@ -53,7 +53,9 @@ import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
 
-class MainActivity : SimpleActivity(), RefreshRecyclerViewListener {
+class MainActivity : SimpleActivity()
+        , RefreshRecyclerViewListener
+{
     private var showCalDAVRefreshToast = false
     private var mShouldFilterBeVisible = false
     private var mIsSearchOpen = false
@@ -867,7 +869,6 @@ class MainActivity : SimpleActivity(), RefreshRecyclerViewListener {
         searchQueryChanged(mLatestSearchQuery)
         refreshViewPager()
     }
-
     private fun openDayAt(timestamp: Long) {
         val dayCode = Formatter.getDayCodeFromTS(timestamp / 1000L)
         calendar_fab.beVisible()

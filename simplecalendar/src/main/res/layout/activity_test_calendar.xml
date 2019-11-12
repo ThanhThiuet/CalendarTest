@@ -18,18 +18,7 @@
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-    <com.simplemobiletools.commons.views.MyFloatingActionButton
-        android:id="@+id/calendar_fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/activity_margin"
-        android:contentDescription="@string/new_event"
-        android:src="@drawable/ic_plus_vector"
-        app:backgroundTint="@color/color_primary"
-        app:rippleColor="@color/pressed_item_foreground"/>
-
-    <RelativeLayout
+  <!--  <RelativeLayout
         android:id="@+id/search_holder"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -71,6 +60,5 @@
             android:scrollbars="vertical"
             app:layoutManager="com.simplemobiletools.commons.views.MyLinearLayoutManager"/>
 
-    </RelativeLayout>
-
+    </RelativeLayout>-->
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

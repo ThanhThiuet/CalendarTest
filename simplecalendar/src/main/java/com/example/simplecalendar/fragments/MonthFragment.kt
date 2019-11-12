@@ -86,7 +86,8 @@ class MonthFragment : Fragment(), MonthlyCalendar {
         mCalendar?.updateMonthlyCalendar(Formatter.getDateTimeFromCode(mDayCode))
     }
 
-    override fun updateMonthlyCalendar(context: Context, month: String, days: ArrayList<DayMonthly>, checkedEvents: Boolean, currTargetDate: DateTime) {
+    override fun updateMonthlyCalendar(context: Context, month: String, days: ArrayList<DayMonthly>,
+                                       checkedEvents: Boolean, currTargetDate: DateTime) {
         val newHash = month.hashCode() + days.hashCode().toLong()
         if ((mLastHash != 0L && !checkedEvents) || mLastHash == newHash) {
             return
